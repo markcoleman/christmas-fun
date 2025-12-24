@@ -5,12 +5,12 @@
     "delay": 1000
   },
   {
-    "text": "Era la noche antes de Navidad, y en todo el repositorio...",
+    "text": "Era la noche antes de Navidad 2025, y en todo el repositorio...",
     "color": "cyan",
     "delay": 1000
   },
   {
-    "text": "No fallaba ni un solo pipeline, ni siquiera un parpadeo.\n",
+    "text": "No fallaba ni un solo pipeline—Copilot los había arreglado ya.\n",
     "color": "cyan",
     "delay": 1500
   },
@@ -20,7 +20,7 @@
     "delay": 1000
   },
   {
-    "text": "Con la esperanza de que el CI/CD pronto llegara.",
+    "text": "Con la esperanza de que el agente de IA pronto llegara.",
     "color": "green",
     "delay": 1500
   },
@@ -30,17 +30,17 @@
     "delay": 1000
   },
   {
-    "text": "Mientras visiones de ramas fusionadas danzaban en sus cabezas.\n",
+    "text": "Mientras visiones de herramientas MCP danzaban en sus cabezas.\n",
     "color": "green",
     "delay": 1500
   },
   {
-    "text": "Con las revisiones de código completas y mensajes leídos,",
+    "text": "Con las revisiones de Copilot completas y mensajes leídos,",
     "color": "green",
     "delay": 1000
   },
   {
-    "text": "Tomaron una siesta rápida, ignorando el temido hilo de 'Needs Rebase'.",
+    "text": "Tomaron una siesta rápida, confiando en que el agente arreglaría el hilo.",
     "color": "green",
     "delay": 1500
   },
@@ -50,22 +50,22 @@
     "delay": 1000
   },
   {
-    "text": "Salté de mi silla giratoria para ver qué sucedía.\n",
+    "text": "Salté de mi escritorio de pie para ver qué sucedía.\n",
     "color": "yellow",
     "delay": 1500
   },
   {
-    "text": "Corrí hacia la consola como un rayo,",
+    "text": "Corrí hacia la terminal como un rayo,",
     "color": "yellow",
     "delay": 1000
   },
   {
-    "text": "Abrí los logs, esperando que el servidor no hubiese colapsado.",
+    "text": "Abrí VS Code, esperando que el LLM no hubiese colapsado.",
     "color": "yellow",
     "delay": 1500
   },
   {
-    "text": "La luna iluminaba los bytes del código recién enviado,",
+    "text": "La luna iluminaba los bytes del código generado por IA,",
     "color": "blue",
     "delay": 1000
   },
@@ -80,37 +80,37 @@
     "delay": 1000
   },
   {
-    "text": "¡Una diminuta nota de versión y ocho nuevos tests unitarios, vaya sorpresa!",
+    "text": "¡Un agente GitHub Copilot y ocho nuevos pull requests, vaya sorpresa!",
     "color": "blue",
     "delay": 1500
   },
   {
-    "text": "Con un conductor diminuto, tan ágil y veloz,",
+    "text": "Con un pequeño agente de código, tan ágil y veloz,",
     "color": "blue",
     "delay": 1000
   },
   {
-    "text": "Supe de inmediato que debía ser San Nicolás— Espera, eso no está del todo bien...\n",
+    "text": "Supe de inmediato que debía ser San Nicolás... Espera, eso no está del todo bien...\n",
     "color": "blue",
     "delay": 1500
   },
   {
-    "text": "En realidad, solo era Jenkins, con un gorro de Santa Claus.",
+    "text": "En realidad, era Copilot, con un gorro de Santa Claus.",
     "color": "magenta",
     "delay": 1000
   },
   {
-    "text": "Él silbó y gritó: “¡Todos los trabajos están en verde, qué alegría!”",
+    "text": "Él silbó y gritó: '¡Todos los workflows están en verde, qué alegría!'",
     "color": "magenta",
     "delay": 1500
   },
   {
-    "text": "Ejecutó todos los lints, y saludó a su equipo,",
+    "text": "Ejecutó todos los lints con precisión agéntica y valiente,",
     "color": "magenta",
     "delay": 1000
   },
   {
-    "text": "Desplegando el código fresco de GitHub a producción.\n",
+    "text": "Desplegando el código fresco de GitHub Actions a producción.\n",
     "color": "magenta",
     "delay": 1500
   },
@@ -120,12 +120,12 @@
     "delay": 0
   },
   {
-    "text": "¡Felices Fiestas desde tu amigable entorno de desarrollo!",
+    "text": "¡Felices Fiestas 2025 desde tu entorno de desarrollo con IA!",
     "color": "bold",
     "delay": 0
   },
   {
-    "text": "¡Que tus commits sean limpios y tus builds tranquilos!",
+    "text": "¡Que tus agentes sean inteligentes y tus builds tranquilos!",
     "color": "bold",
     "delay": 0
   },

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     // 1) Fetch releases from GitHub
     const response = await fetch(
-      "https://api.github.com/repos/markcoleman/christmas-fun-2024/releases",
+      "https://api.github.com/repos/markcoleman/christmas-fun/releases",
     );
     if (!response.ok) {
       throw new Error(`GitHub API request failed: ${response.status}`);
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <div class="card">
               <div class="card-content">
                 <span class="card-title">No releases found.</span>
+                <p>Check back later for release notes!</p>
               </div>
             </div>
           </div>
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Linkify @mentions
         htmlBody = linkifyMentions(htmlBody);
 
-        // Create slide content using Materialize Card
+        // Create slide content using Card
         const slideContent = `
             <div class="card">
               <div class="card-content">
@@ -82,23 +83,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
-        loop: true,
+        loop: releases.length > 1,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        // Disable autoplay for manual navigation
         // Enable keyboard navigation
         keyboard: {
           enabled: true,
           onlyInViewport: true,
         },
-        // Optional: Add effect if desired
-        // For this setup, the blur is handled via CSS
+        // Auto-height for variable content
+        autoHeight: true,
       });
     }
   } catch (error) {
@@ -106,7 +102,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <div class="swiper-slide">
           <div class="card">
             <div class="card-content">
-              <span class="card-title">Error loading releases:</span>
+              <span class="card-title">Error loading releases</span>
               <p>${error.message}</p>
             </div>
           </div>
