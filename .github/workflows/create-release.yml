@@ -25,7 +25,7 @@ jobs:
     steps:
       # 1. Check out code so we can fetch tags, do Docker build, etc.
       - name: Check out
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # 2. Determine the version (either from "custom_version" input or github.ref_name)
       - name: Determine version
