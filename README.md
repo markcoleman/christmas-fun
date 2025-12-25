@@ -8,6 +8,7 @@ An AI-powered, software-engineer-themed telling of the night before Christmas, b
 - ✨ **Festive Console Experience**: ASCII art, timed animations, and colorful output
 - 🎁 **Easter Eggs**: Hidden surprises activated by environment variables
 - 🌐 **Modern GitHub Pages**: Glassmorphism UI with responsive design
+- 🎅 **MCP Server**: Model Context Protocol server for spreading holiday cheer through AI assistants
 
 ## Getting Started
 
@@ -32,6 +33,46 @@ npm start
 
 # Run tests
 npm test
+
+# Run the MCP server
+npm run mcp
+```
+
+## MCP Server 🎅
+
+This project includes a festive Model Context Protocol (MCP) server that brings holiday cheer to AI assistants!
+
+### Features
+
+- **Tools**: Get holiday messages and check code quality with Santa's naughty/nice list
+- **Resources**: Access Christmas stories and ASCII art
+- **Prompts**: Generate festive code reviews and commit messages
+
+### Usage
+
+```bash
+# Start the MCP server
+npm run mcp
+
+# Or use with MCP Inspector
+npx @modelcontextprotocol/inspector node dist/src/mcp-server.js
+```
+
+For detailed MCP server documentation, see [src/README.md](src/README.md).
+
+### Configuration for Claude Desktop
+
+Add to your Claude Desktop configuration:
+
+```json
+{
+  "mcpServers": {
+    "christmas-fun": {
+      "command": "node",
+      "args": ["/absolute/path/to/christmas-fun/dist/src/mcp-server.js"]
+    }
+  }
+}
 ```
 
 ## Easter Eggs

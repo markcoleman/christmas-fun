@@ -10,5 +10,5 @@
       "strict": true,
       "resolveJsonModule": true
     },
-    "include": ["index.ts", "asciiArt.js", "logWithDelay.ts", "easterEggs.ts",  "__tests__"]
+    "include": ["index.ts", "asciiArt.js", "logWithDelay.ts", "easterEggs.ts",  "__tests__", "src"]
   }
