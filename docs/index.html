@@ -2,23 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Christmas Fun - Wintry Hero, Classic Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Fun 2025 - AI-Powered Holiday Coding</title>
+    <meta name="description" content="An AI-powered, software-engineer-themed telling of the night before Christmas 2025, featuring GitHub Copilot agents and modern tech." />
     <!-- Google Font for a modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <!-- Materialize CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- Material Icons -->
     <link
@@ -31,8 +28,8 @@
 
   <body>
     <!-- SNOW LAYER -->
-    <div class="snowfall">
-      <!-- You can add or remove snowflake divs to vary the effect -->
+    <div class="snowfall" aria-hidden="true">
+      <!-- Snowflake divs for the effect -->
       <div class="snowflake" style="left: 10%; animation-duration: 5s"></div>
       <div class="snowflake" style="left: 25%; animation-duration: 6s"></div>
       <div class="snowflake" style="left: 45%; animation-duration: 4s"></div>
@@ -54,22 +51,53 @@
       <div class="snowflake" style="left: 95%; animation-duration: 6.3s"></div>
     </div>
 
-    <!-- Update the hero section -->
+    <!-- Hero Section with Glassmorphism -->
     <div class="hero">
       <div class="hero-content">
+        <span class="hero-badge">🎄 2025 Edition</span>
         <h1>Christmas Fun Project</h1>
         <p>
-          A modern Node.js experience with festive animations, interactive
-          elements, and holiday spirit
+          An AI-powered Node.js experience with GitHub Copilot agents, festive animations, and holiday spirit
         </p>
+        <div class="hero-cta">
+          <a
+            class="btn btn-primary"
+            href="https://github.com/markcoleman/christmas-fun"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="material-icons">code</span>
+            View on GitHub
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- MAIN CONTENT -->
-    <div class="main-container">
-      <div class="tree-container">
-        <div class="tree">⭐</div>
-        <pre>
+    <main class="main-container">
+      <!-- Feature Cards -->
+      <section class="features-section">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI-Powered</h3>
+          <p>Built with GitHub Copilot agents and modern AI tooling for 2025</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>MCP Ready</h3>
+          <p>Leverages Model Context Protocol for seamless AI integration</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Holiday Magic</h3>
+          <p>Easter eggs, ASCII art, and festive console animations</p>
+        </div>
+      </section>
+
+      <!-- Tree Container with Glassmorphism -->
+      <section class="tree-container">
+        <div class="tree" aria-label="Star">⭐</div>
+        <pre aria-label="ASCII Christmas Tree">
          *
         ***
        *****
@@ -82,39 +110,32 @@
     {   ||   }
     {   ||   }
     {___||___}
-      </pre
-        >
-      </div>
+        </pre>
+      </section>
 
-      <p>
-        Locally, run <code>npm install</code> and <code>npm start</code> to
-        experience the console-based holiday story. For more details, check out:
-      </p>
-      <a
-        class="github-link"
-        href="https://github.com/markcoleman/christmas-fun-2024"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View on GitHub
-      </a>
+      <section class="instructions">
+        <h2>Get Started</h2>
+        <p>
+          Run <code>npm install</code> and <code>npm start</code> to
+          experience the console-based holiday story featuring AI and Copilot themes.
+        </p>
+      </section>
 
-      <div class="about">
+      <section class="about glass-card">
         <h2>About This Project</h2>
         <p>
-          The “Christmas Fun” app uses ASCII art, timed delays,
-          environment-based “Easter eggs,” and more. This page is a refined,
-          responsive design featuring a wintery hero banner, swirling snow, and
-          dynamic release info from GitHub below.
+          The "Christmas Fun 2025" app celebrates the year of AI agents! It features
+          ASCII art, timed delays, environment-based "Easter eggs," and references
+          to GitHub Copilot, MCP (Model Context Protocol), and agentic workflows.
         </p>
         <p>
-          We’ve updated the ASCII tree to a more recognizable shape, reminiscent
-          of a classic Christmas tree (with a trunk!).
+          This year's edition embraces the latest 2025 tech trends: AI pair programming,
+          coding agents, and the magic of automated code reviews.
         </p>
-      </div>
+      </section>
 
-      <!-- RELEASENOTES SECTION -->
-      <div class="releases-container">
+      <!-- RELEASES SECTION -->
+      <section class="releases-container glass-card">
         <h2>Recent Releases</h2>
 
         <!-- Swiper -->
@@ -133,26 +154,21 @@
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
-      </div>
+      </section>
 
       <footer>
-        <p style="margin-top: 1rem">
-          May your commits be <span style="color: #84ff84">green</span> and your
+        <p>
+          May your <span class="highlight">agents</span> be smart and your
           builds be serene.<br />
-          Happy Holidays!
+          <strong>Happy Holidays 2025! 🎄</strong>
         </p>
       </footer>
-    </div>
+    </main>
 
     <!-- Showdown for Markdown -> HTML -->
     <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Materialize JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="main.js"></script>
   </body>

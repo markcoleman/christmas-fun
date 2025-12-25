@@ -5,12 +5,12 @@
       "delay": 1000
     },
     {
-      "text": "It was the night before Christmas, and all through the repo...",
+      "text": "It was the night before Christmas 2025, and all through the repo...",
       "color": "cyan",
       "delay": 1000
     },
     {
-      "text": "Not a single pipeline was failing—not even a flake or two.\n",
+      "text": "Not a single pipeline was failing—Copilot had fixed them, you know.\n",
       "color": "cyan",
       "delay": 1500
     },
@@ -20,7 +20,7 @@
       "delay": 1000
     },
     {
-      "text": "In hopes that the CI/CD soon would be there.",
+      "text": "In hopes that the AI agent soon would be there.",
       "color": "green",
       "delay": 1500
     },
@@ -30,17 +30,17 @@
       "delay": 1000
     },
     {
-      "text": "While visions of merged branches danced in their heads.\n",
+      "text": "While visions of MCP tools danced in their heads.\n",
       "color": "green",
       "delay": 1500
     },
     {
-      "text": "With code reviews done and commit messages read,",
+      "text": "With Copilot reviews done and commit messages read,",
       "color": "green",
       "delay": 1000
     },
     {
-      "text": "They took a quick nap, ignoring the dreaded 'Needs Rebase' thread.",
+      "text": "They took a quick nap, trusting the agent to fix the thread.",
       "color": "green",
       "delay": 1500
     },
@@ -50,22 +50,22 @@
       "delay": 1000
     },
     {
-      "text": "I sprang from my spinny chair to see what was the matter.\n",
+      "text": "I sprang from my standing desk to see what was the matter.\n",
       "color": "yellow",
       "delay": 1500
     },
     {
-      "text": "Away to the console I flew like a flash,",
+      "text": "Away to the terminal I flew like a flash,",
       "color": "yellow",
       "delay": 1000
     },
     {
-      "text": "Tore open the logs, hoping the server didn't crash.",
+      "text": "Tore open VS Code, hoping the LLM didn't crash.",
       "color": "yellow",
       "delay": 1500
     },
     {
-      "text": "The moon on the bytes of the new-pushed code,",
+      "text": "The moon on the bytes of the AI-generated code,",
       "color": "blue",
       "delay": 1000
     },
@@ -80,37 +80,37 @@
       "delay": 1000
     },
     {
-      "text": "But a miniature release note, and eight fresh unit tests, oh dear!",
+      "text": "But a GitHub Copilot agent, and eight fresh pull requests, oh dear!",
       "color": "blue",
       "delay": 1500
     },
     {
-      "text": "With a little old driver, so agile and quick,",
+      "text": "With a little old coding agent, so agile and quick,",
       "color": "blue",
       "delay": 1000
     },
     {
-      "text": "I knew in a moment it must be St. Nick— Wait, that’s not quite right...\n",
+      "text": "I knew in a moment it must be St. Nick... Wait, that's not quite right...\n",
       "color": "blue",
       "delay": 1500
     },
     {
-      "text": "Actually, it was just Jenkins, wearing a Santa hat!",
+      "text": "Actually, it was Copilot, wearing a Santa hat!",
       "color": "magenta",
       "delay": 1000
     },
     {
-      "text": "He whistled, and shouted, “All jobs are green, how about that!”",
+      "text": "It whistled, and shouted, 'All workflows are green, how about that!'",
       "color": "magenta",
       "delay": 1500
     },
     {
-      "text": "He ran all the lints, to his team gave a wave,",
+      "text": "It ran all the lints with agentic precision so brave,",
       "color": "magenta",
       "delay": 1000
     },
     {
-      "text": "Deploying fresh code from GitHub to live.\n",
+      "text": "Deploying fresh code from GitHub Actions to live.\n",
       "color": "magenta",
       "delay": 1500
     },
@@ -120,12 +120,12 @@
       "delay": 0
     },
     {
-      "text": "Happy Holidays from your friendly dev environment!",
-      "color": "bold", 
+      "text": "Happy Holidays 2025 from your AI-powered dev environment!",
+      "color": "bold",
       "delay": 0
     },
     {
-      "text": "May your commits be clean and your builds be serene!",
+      "text": "May your agents be smart and your builds be serene!",
       "color": "bold",
       "delay": 0
     },
