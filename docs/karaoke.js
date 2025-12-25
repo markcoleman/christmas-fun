@@ -42,7 +42,7 @@ const chooseAnotherBtn = document.getElementById("choose-another-btn");
 // Load carols data
 async function loadCarols() {
   try {
-    const response = await fetch("../carols.json");
+    const response = await fetch("carols.json");
     if (!response.ok) {
       throw new Error("Failed to load carols");
     }
