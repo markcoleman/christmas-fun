@@ -27,7 +27,7 @@
     "lng": 151.2093,
     "arrivalTime": "2025-12-24T19:15:00Z",
     "funFact": "🏖️ Santa surfs to some beach houses! Australians celebrate Christmas in summer—Santa trades his fur coat for board shorts.",
-    "deliveries": 25000000
+    "deliveries": 151000000
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "lng": 72.8777,
     "arrivalTime": "2025-12-24T20:00:00Z",
     "funFact": "🪔 Though Christmas isn't widely celebrated, Santa visits Christian communities and delivers presents alongside Diwali decorations!",
-    "deliveries": 28000000
+    "deliveries": 179000000
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "lng": 55.2708,
     "arrivalTime": "2025-12-24T20:45:00Z",
     "funFact": "🏜️ Santa navigates through the world's tallest building, the Burj Khalifa! Desert deliveries require special sand-proof present wrapping.",
-    "deliveries": 9000000
+    "deliveries": 188000000
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "lng": 37.6173,
     "arrivalTime": "2025-12-24T21:30:00Z",
     "funFact": "🏛️ Santa meets Ded Moroz (Grandfather Frost)! They compare sleigh technology and discuss optimal gift delivery algorithms.",
-    "deliveries": 144000000
+    "deliveries": 332000000
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "lng": 2.3522,
     "arrivalTime": "2025-12-24T22:15:00Z",
     "funFact": "🥐 In Provence, they traditionally eat 13 desserts on Christmas! Santa samples a few while deploying presents via Eiffel Tower relay.",
-    "deliveries": 67000000
+    "deliveries": 399000000
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "lng": -0.1278,
     "arrivalTime": "2025-12-24T22:45:00Z",
     "funFact": "☕ Santa stops for tea and mince pies! British children leave out carrots for Rudolph, who rates them 5 stars every year.",
-    "deliveries": 67000000
+    "deliveries": 466000000
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "lng": 3.3792,
     "arrivalTime": "2025-12-24T23:00:00Z",
     "funFact": "🎉 Christmas in Nigeria is celebrated with huge family gatherings! Santa joins in the jollof rice feasts (reindeer approved!).",
-    "deliveries": 206000000
+    "deliveries": 672000000
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "lng": -43.1729,
     "arrivalTime": "2025-12-24T23:30:00Z",
     "funFact": "🏖️ Santa surfs again! Brazilians celebrate with beach barbecues. Christ the Redeemer helps guide Santa's approach vector.",
-    "deliveries": 212000000
+    "deliveries": 884000000
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "lng": -74.006,
     "arrivalTime": "2025-12-25T00:00:00Z",
     "funFact": "🗽 Times Square lights guide Santa in! The Rockefeller tree serves as a landing beacon with 50,000 LED lights (verified by GitHub Actions).",
-    "deliveries": 331000000
+    "deliveries": 1215000000
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "lng": -99.1332,
     "arrivalTime": "2025-12-25T00:30:00Z",
     "funFact": "🎊 Las Posadas celebrations continue! Santa delivers tamales-scented presents and joins the piñata festivities.",
-    "deliveries": 128000000
+    "deliveries": 1343000000
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "lng": -118.2437,
     "arrivalTime": "2025-12-25T01:00:00Z",
     "funFact": "🌟 Hollywood celebrities leave out gourmet cookies! Santa's sleigh gets a cameo in several security camera systems.",
-    "deliveries": 50000000
+    "deliveries": 1393000000
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "lng": -157.8581,
     "arrivalTime": "2025-12-25T01:30:00Z",
     "funFact": "🌺 Mele Kalikimaka! Santa trades his sleigh for an outrigger canoe to reach remote island homes. Reindeer enjoy the tropical break!",
-    "deliveries": 1400000
+    "deliveries": 1394400000
   },
   {
     "id": 15,
