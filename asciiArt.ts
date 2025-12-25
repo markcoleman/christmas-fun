@@ -5,14 +5,17 @@ import chalk from "chalk";
  * A festive ASCII Christmas tree
  */
 export const christmasTree: string = `
-         ${chalk.yellowBright("★")}
-        ${chalk.greenBright("oOo")}
-       ${chalk.greenBright("oOoOo")}
-      ${chalk.greenBright("oOoOoOo")}
-        ${chalk.greenBright("oOo")}
-        ${chalk.greenBright("oOo")}
-     ~ ${chalk.blueBright("SOFTWARE")} ~
-       ${chalk.magentaBright("ENGINEER")}
+          ${chalk.yellowBright("★")}
+         ${chalk.greenBright("/|\\")}
+        ${chalk.greenBright("/*|*\\")}
+       ${chalk.greenBright("/*/|\\*\\")}
+      ${chalk.greenBright("/*/*/*\\*\\")}
+     ${chalk.greenBright("/*/*/|\\*\\*\\")}
+    ${chalk.greenBright("/*/*/*/|\\*\\*\\*\\")}
+        ${chalk.yellow("|||")}
+        ${chalk.yellow("|||")}
+   ~ ${chalk.blueBright("SOFTWARE")} ~
+     ${chalk.magentaBright("ENGINEER")}
 `;
 
 /**
