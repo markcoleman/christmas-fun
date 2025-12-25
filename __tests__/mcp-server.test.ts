@@ -70,20 +70,31 @@ describe("Christmas Fun MCP Server", () => {
 
     it("should identify nice code patterns", () => {
       const niceCode = "fix: improve test coverage and documentation";
-      const niceKeywords = ["fix", "improve", "test", "documentation"];
+      // Using word boundary regex patterns
+      const niceKeywords = [
+        /\bfix\b/i,
+        /\bimprove\b/i,
+        /\btest\b/i,
+        /\bdocumentation\b/i,
+      ];
 
-      const hasNiceWords = niceKeywords.some((word) =>
-        niceCode.toLowerCase().includes(word)
+      const hasNiceWords = niceKeywords.some((pattern) =>
+        pattern.test(niceCode.toLowerCase())
       );
       expect(hasNiceWords).toBe(true);
     });
 
     it("should identify naughty code patterns", () => {
       const naughtyCode = "// TODO: hack this together, console.log for debug";
-      const naughtyKeywords = ["todo", "hack", "console.log"];
+      // Using word boundary regex patterns
+      const naughtyKeywords = [
+        /\btodo\b/i,
+        /\bhack\b/i,
+        /console\.log/i,
+      ];
 
-      const hasNaughtyWords = naughtyKeywords.some((word) =>
-        naughtyCode.toLowerCase().includes(word)
+      const hasNaughtyWords = naughtyKeywords.some((pattern) =>
+        pattern.test(naughtyCode.toLowerCase())
       );
       expect(hasNaughtyWords).toBe(true);
     });

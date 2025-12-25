@@ -133,28 +133,31 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const codeOrMessage = (args?.code_or_message as string) || "";
     
     // Fun heuristics for determining naughty or nice
+    // Using word boundary checks to avoid false positives
     const niceKeywords = [
-      "fix",
-      "improve",
-      "test",
-      "documentation",
-      "refactor",
-      "optimize",
-      "clean",
+      "\\bfix\\b",
+      "\\bimprove\\b",
+      "\\btest\\b",
+      "\\bdocumentation\\b",
+      "\\brefactor\\b",
+      "\\boptimize\\b",
+      "\\bclean\\b",
     ];
     const naughtyKeywords = [
-      "hack",
-      "temp",
-      "todo",
-      "fixme",
-      "console.log",
-      "debugger",
+      "\\bhack\\b",
+      "\\btemp\\b",
+      "\\btodo\\b",
+      "\\bfixme\\b",
+      "console\\.log",
+      "\\bdebugger\\b",
     ];
 
     const lowerCode = codeOrMessage.toLowerCase();
-    const hasNiceWords = niceKeywords.some((word) => lowerCode.includes(word));
-    const hasNaughtyWords = naughtyKeywords.some((word) =>
-      lowerCode.includes(word)
+    const hasNiceWords = niceKeywords.some((pattern) => 
+      new RegExp(pattern, "i").test(lowerCode)
+    );
+    const hasNaughtyWords = naughtyKeywords.some((pattern) =>
+      new RegExp(pattern, "i").test(lowerCode)
     );
 
     let verdict = "";
@@ -250,8 +253,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   }
 
   if (uri === "christmas://ascii-art/tree") {
-    const asciiTree = `
-          *
+    const asciiTree = `          *
          /|\\
         /*|O\\
        /*/|\\*\\
@@ -263,8 +265,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
  /X/O/X/*/|\\X\\O\\X\\*\\
 /O/X/*/O/X|*\\X\\O\\X\\*\\
         |X|
-        |X|
-    `;
+        |X|`;
     return {
       contents: [
         {
