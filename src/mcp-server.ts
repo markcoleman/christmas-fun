@@ -252,6 +252,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   }
 
   if (uri === "christmas://ascii-art/tree") {
+    // ASCII Christmas tree - backslashes are part of the tree design
     const asciiTree = `          *
          /|\\
         /*|O\\
@@ -382,6 +383,9 @@ Example format: "🎄 feat: add holiday themed error messages"`,
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
+  // Note: Using console.error here is correct for MCP servers
+  // The MCP protocol uses stdout for communication, so status messages
+  // must go to stderr to avoid interfering with the protocol
   console.error("Christmas Fun MCP Server running on stdio");
 }
 
