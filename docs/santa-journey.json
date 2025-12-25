@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "city": "North Pole",
+    "country": "Arctic",
+    "lat": 90,
+    "lng": 0,
+    "arrivalTime": "2025-12-24T18:00:00Z",
+    "funFact": "🎅 Santa begins his journey! The workshop elves have loaded 7.8 billion presents using an AI-optimized packing algorithm.",
+    "deliveries": 0
+  },
+  {
+    "id": 2,
+    "city": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "arrivalTime": "2025-12-24T18:30:00Z",
+    "funFact": "🎌 In Japan, Christmas Eve is celebrated with KFC! Santa's reindeer are particularly fond of the fried chicken stops here.",
+    "deliveries": 126000000
+  },
+  {
+    "id": 3,
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "arrivalTime": "2025-12-24T19:15:00Z",
+    "funFact": "🏖️ Santa surfs to some beach houses! Australians celebrate Christmas in summer—Santa trades his fur coat for board shorts.",
+    "deliveries": 25000000
+  },
+  {
+    "id": 4,
+    "city": "Mumbai",
+    "country": "India",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "arrivalTime": "2025-12-24T20:00:00Z",
+    "funFact": "🪔 Though Christmas isn't widely celebrated, Santa visits Christian communities and delivers presents alongside Diwali decorations!",
+    "deliveries": 28000000
+  },
+  {
+    "id": 5,
+    "city": "Dubai",
+    "country": "UAE",
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "arrivalTime": "2025-12-24T20:45:00Z",
+    "funFact": "🏜️ Santa navigates through the world's tallest building, the Burj Khalifa! Desert deliveries require special sand-proof present wrapping.",
+    "deliveries": 9000000
+  },
+  {
+    "id": 6,
+    "city": "Moscow",
+    "country": "Russia",
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "arrivalTime": "2025-12-24T21:30:00Z",
+    "funFact": "🏛️ Santa meets Ded Moroz (Grandfather Frost)! They compare sleigh technology and discuss optimal gift delivery algorithms.",
+    "deliveries": 144000000
+  },
+  {
+    "id": 7,
+    "city": "Paris",
+    "country": "France",
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "arrivalTime": "2025-12-24T22:15:00Z",
+    "funFact": "🥐 In Provence, they traditionally eat 13 desserts on Christmas! Santa samples a few while deploying presents via Eiffel Tower relay.",
+    "deliveries": 67000000
+  },
+  {
+    "id": 8,
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "arrivalTime": "2025-12-24T22:45:00Z",
+    "funFact": "☕ Santa stops for tea and mince pies! British children leave out carrots for Rudolph, who rates them 5 stars every year.",
+    "deliveries": 67000000
+  },
+  {
+    "id": 9,
+    "city": "Lagos",
+    "country": "Nigeria",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "arrivalTime": "2025-12-24T23:00:00Z",
+    "funFact": "🎉 Christmas in Nigeria is celebrated with huge family gatherings! Santa joins in the jollof rice feasts (reindeer approved!).",
+    "deliveries": 206000000
+  },
+  {
+    "id": 10,
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "arrivalTime": "2025-12-24T23:30:00Z",
+    "funFact": "🏖️ Santa surfs again! Brazilians celebrate with beach barbecues. Christ the Redeemer helps guide Santa's approach vector.",
+    "deliveries": 212000000
+  },
+  {
+    "id": 11,
+    "city": "New York",
+    "country": "USA",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "arrivalTime": "2025-12-25T00:00:00Z",
+    "funFact": "🗽 Times Square lights guide Santa in! The Rockefeller tree serves as a landing beacon with 50,000 LED lights (verified by GitHub Actions).",
+    "deliveries": 331000000
+  },
+  {
+    "id": 12,
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "arrivalTime": "2025-12-25T00:30:00Z",
+    "funFact": "🎊 Las Posadas celebrations continue! Santa delivers tamales-scented presents and joins the piñata festivities.",
+    "deliveries": 128000000
+  },
+  {
+    "id": 13,
+    "city": "Los Angeles",
+    "country": "USA",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "arrivalTime": "2025-12-25T01:00:00Z",
+    "funFact": "🌟 Hollywood celebrities leave out gourmet cookies! Santa's sleigh gets a cameo in several security camera systems.",
+    "deliveries": 50000000
+  },
+  {
+    "id": 14,
+    "city": "Honolulu",
+    "country": "USA (Hawaii)",
+    "lat": 21.3099,
+    "lng": -157.8581,
+    "arrivalTime": "2025-12-25T01:30:00Z",
+    "funFact": "🌺 Mele Kalikimaka! Santa trades his sleigh for an outrigger canoe to reach remote island homes. Reindeer enjoy the tropical break!",
+    "deliveries": 1400000
+  },
+  {
+    "id": 15,
+    "city": "North Pole",
+    "country": "Arctic",
+    "lat": 90,
+    "lng": 0,
+    "arrivalTime": "2025-12-25T02:00:00Z",
+    "funFact": "🏠 Santa returns home! All 7.8B+ presents delivered successfully. The elves run a retrospective while Mrs. Claus prepares hot cocoa.",
+    "deliveries": 7800000000
+  }
+]
