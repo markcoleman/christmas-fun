@@ -133,31 +133,30 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const codeOrMessage = (args?.code_or_message as string) || "";
     
     // Fun heuristics for determining naughty or nice
-    // Using word boundary checks to avoid false positives
-    const niceKeywords = [
-      "\\bfix\\b",
-      "\\bimprove\\b",
-      "\\btest\\b",
-      "\\bdocumentation\\b",
-      "\\brefactor\\b",
-      "\\boptimize\\b",
-      "\\bclean\\b",
+    // Pre-compiled regex patterns for efficiency
+    const nicePatterns = [
+      /\bfix\b/i,
+      /\bimprove\b/i,
+      /\btest\b/i,
+      /\bdocumentation\b/i,
+      /\brefactor\b/i,
+      /\boptimize\b/i,
+      /\bclean\b/i,
     ];
-    const naughtyKeywords = [
-      "\\bhack\\b",
-      "\\btemp\\b",
-      "\\btodo\\b",
-      "\\bfixme\\b",
-      "console\\.log",
-      "\\bdebugger\\b",
+    const naughtyPatterns = [
+      /\bhack\b/i,
+      /\btemp\b/i,
+      /\btodo\b/i,
+      /\bfixme\b/i,
+      /console\.log/i,
+      /\bdebugger\b/i,
     ];
 
-    const lowerCode = codeOrMessage.toLowerCase();
-    const hasNiceWords = niceKeywords.some((pattern) => 
-      new RegExp(pattern, "i").test(lowerCode)
+    const hasNiceWords = nicePatterns.some((pattern) => 
+      pattern.test(codeOrMessage)
     );
-    const hasNaughtyWords = naughtyKeywords.some((pattern) =>
-      new RegExp(pattern, "i").test(lowerCode)
+    const hasNaughtyWords = naughtyPatterns.some((pattern) =>
+      pattern.test(codeOrMessage)
     );
 
     let verdict = "";
