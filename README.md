@@ -88,6 +88,30 @@ Contributions are welcome! Please ensure your changes:
 2. Follow the established code style
 3. Maintain the festive spirit 🎄
 
+## Creating a Release
+
+To create a new release:
+
+1. **Create and push a version tag:**
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+   
+2. The `create-release` workflow will automatically:
+   - Validate the tag exists in the repository
+   - Run Release Drafter to generate/publish release notes
+   - Build and push Docker images to GitHub Container Registry with the version tag and `latest`
+   - Add release notes to the Docker image description
+
+3. **Manual workflow run (optional):**
+   - Navigate to Actions → "create release" workflow
+   - Click "Run workflow"
+   - Optionally provide a custom version/tag
+   - This is useful for testing or re-running a release
+
+**Note:** Version tags should follow semantic versioning (e.g., `v1.0.0`, `v2.1.3`)
+
 ---
 
 **May your agents be smart and your builds be serene!**
