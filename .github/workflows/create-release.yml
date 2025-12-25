@@ -112,7 +112,7 @@ jobs:
           RELEASE_NOTES_RAW: ${{ steps.get_release_notes.outputs.result }}
         run: |
           # We'll transform multiline release notes to a single line, if we actually fetched them
-          if [ -n "$RELEASE_NOTES_RAW" ]; then
+          if [ -n "${RELEASE_NOTES_RAW:-}" ]; then
             RELEASE_NOTES=$(echo "$RELEASE_NOTES_RAW" | tr '\n' ' ' | sed 's/"/\\"/g')
           else
             RELEASE_NOTES="(No release notes or run was manual.)"
