@@ -239,20 +239,26 @@ function animateLyrics() {
 
   const currentLyric = currentCarol.lyrics[currentLineIndex];
 
-  // Update line styling
-  lines.forEach((line, index) => {
-    if (index < currentLineIndex) {
-      line.classList.add("past");
-      line.classList.remove("current");
-    } else if (index === currentLineIndex) {
-      line.classList.add("current");
-      line.classList.remove("past");
-      // Scroll to current line
-      line.scrollIntoView({ behavior: "smooth", block: "center" });
-    } else {
-      line.classList.remove("current", "past");
+  // Update line styling (only update current and adjacent lines for efficiency)
+  const prevIndex = currentLineIndex - 1;
+  
+  if (prevIndex >= 0 && prevIndex < lines.length) {
+    lines[prevIndex].classList.add("past");
+    lines[prevIndex].classList.remove("current");
+  }
+  
+  if (currentLineIndex < lines.length) {
+    const currentLine = lines[currentLineIndex];
+    currentLine.classList.add("current");
+    currentLine.classList.remove("past");
+    
+    // Only scroll if the line is not already visible
+    const rect = currentLine.getBoundingClientRect();
+    const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+    if (!isVisible) {
+      currentLine.scrollIntoView({ behavior: "smooth", block: "center" });
     }
-  });
+  }
 
   // Update progress bar
   const progress = ((currentLineIndex + 1) / currentCarol.lyrics.length) * 100;
@@ -327,10 +333,33 @@ function finishSong() {
   if (isKaraokeMode) {
     showResults();
   } else {
-    // Just show a completion message
+    // Show a completion message in sing-along mode
     setTimeout(() => {
-      alert("🎉 Great singing! Thanks for joining the karaoke!");
-      resetPlaying();
+      // Create a simple notification instead of alert
+      const notification = document.createElement("div");
+      notification.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(76, 175, 80, 0.95);
+        color: white;
+        padding: 2rem 3rem;
+        border-radius: 16px;
+        font-size: 1.5rem;
+        text-align: center;
+        z-index: 10000;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      `;
+      notification.innerHTML = "🎉 Great singing!<br>Thanks for joining the karaoke! 🎤";
+      notification.setAttribute("role", "alert");
+      notification.setAttribute("aria-live", "polite");
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.remove();
+        resetPlaying();
+      }, 3000);
     }, 500);
   }
 }
