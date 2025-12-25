@@ -5,17 +5,28 @@ import chalk from "chalk";
  * A festive ASCII Christmas tree
  */
 export const christmasTree: string = `
-          ${chalk.yellowBright("★")}
-         ${chalk.greenBright("/|\\")}
-        ${chalk.greenBright("/*|*\\")}
-       ${chalk.greenBright("/*/|\\*\\")}
-      ${chalk.greenBright("/*/*/*\\*\\")}
-     ${chalk.greenBright("/*/*/|\\*\\*\\")}
-    ${chalk.greenBright("/*/*/*/|\\*\\*\\*\\")}
-        ${chalk.yellow("|||")}
-        ${chalk.yellow("|||")}
-   ~ ${chalk.blueBright("SOFTWARE")} ~
-     ${chalk.magentaBright("ENGINEER")}
+           ${chalk.yellow("|")}
+         ${chalk.greenBright("'.'.''")}
+        ${chalk.greenBright("-= o =-")}
+         ${chalk.greenBright(".'.'.")}
+           ${chalk.yellow("|")}
+           ${chalk.yellow(",")}
+          ${chalk.greenBright("/ \\")}
+        ${chalk.greenBright(".'. o'.")}
+       ${chalk.greenBright("/ 6 s ^.\\")}
+      ${chalk.greenBright("/.-.o *.-.\\")}
+      ${chalk.greenBright("`/. '.'9  \\`")}
+     ${chalk.greenBright(".'6. *  s o '.")}
+    ${chalk.greenBright("/.--.s .6 .--.\\")}
+    ${chalk.greenBright("`/ s '. .' * .\\`")}
+   ${chalk.greenBright(".' o 6 .` .^ 6 s'.")}
+  ${chalk.greenBright("/.---. * ^ o .----.\\")}
+  ${chalk.greenBright("`/s * \\`.^ s.' ^ * \\`")}
+ ${chalk.greenBright(".' o , 6 \\`.' ^ o  6 '.")}
+${chalk.greenBright("/,-^--,  o ^ * s ,----,\\")}
+${chalk.greenBright("`'-._s.;-,_6_^,-;._o.-'")}
+     ${chalk.yellow("jgs |   |")}
+         ${chalk.yellow("`\"\"\"`")}
 `;
 
 /**
