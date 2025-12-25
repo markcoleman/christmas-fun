@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Carol Karaoke - Christmas Fun 2025</title>
+    <meta name="description" content="Sing along to your favorite Christmas carols with interactive karaoke mode!" />
+    <!-- Google Font for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="main.css" rel="stylesheet" />
+    <link href="karaoke.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- SNOW LAYER -->
+    <div class="snowfall" aria-hidden="true">
+      <div class="snowflake" style="left: 10%; animation-duration: 5s"></div>
+      <div class="snowflake" style="left: 25%; animation-duration: 6s"></div>
+      <div class="snowflake" style="left: 45%; animation-duration: 4s"></div>
+      <div class="snowflake" style="left: 60%; animation-duration: 8s"></div>
+      <div class="snowflake" style="left: 75%; animation-duration: 5s"></div>
+      <div class="snowflake" style="left: 90%; animation-duration: 7s"></div>
+      <div class="snowflake" style="left: 15%; animation-duration: 5.5s"></div>
+      <div class="snowflake" style="left: 35%; animation-duration: 8s"></div>
+      <div class="snowflake" style="left: 55%; animation-duration: 4.5s"></div>
+      <div class="snowflake" style="left: 70%; animation-duration: 9s"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-link">
+        <span class="material-icons">home</span>
+        Home
+      </a>
+      <a href="santa-tracker.html" class="nav-link">
+        <span class="material-icons">map</span>
+        Santa Tracker
+      </a>
+      <a href="karaoke.html" class="nav-link active">
+        <span class="material-icons">music_note</span>
+        Karaoke
+      </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero hero-small">
+      <div class="hero-content">
+        <span class="hero-badge">🎤 Sing Along</span>
+        <h1>Christmas Carol Karaoke</h1>
+        <p>
+          Sing your favorite Christmas carols with real-time lyrics and interactive karaoke mode!
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+      <!-- Carol Selection -->
+      <section id="carol-selection" class="glass-card">
+        <h2>🎵 Select Your Carol</h2>
+        <div id="carol-list" class="carol-grid">
+          <!-- Carol cards will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Karaoke Player -->
+      <section id="karaoke-player" class="glass-card" style="display: none">
+        <div class="karaoke-header">
+          <button id="back-btn" class="btn btn-secondary" aria-label="Back to carol selection">
+            <span class="material-icons">arrow_back</span>
+            Back
+          </button>
+          <h2 id="song-title">Now Playing</h2>
+          <div class="mode-toggle">
+            <button id="mode-btn" class="btn btn-primary" aria-label="Toggle karaoke mode">
+              <span class="material-icons">microphone</span>
+              Karaoke Mode
+            </button>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+          <button id="play-btn" class="btn btn-primary" aria-label="Start singing">
+            <span class="material-icons">play_arrow</span>
+            Start Singing
+          </button>
+          <button id="pause-btn" class="btn btn-secondary" style="display: none" aria-label="Pause">
+            <span class="material-icons">pause</span>
+            Pause
+          </button>
+          <button id="reset-btn" class="btn btn-secondary" aria-label="Reset">
+            <span class="material-icons">replay</span>
+            Reset
+          </button>
+          
+          <div class="speed-control">
+            <label for="speed-slider">Speed:</label>
+            <input 
+              type="range" 
+              id="speed-slider" 
+              min="0.5" 
+              max="2" 
+              step="0.25" 
+              value="1"
+              aria-label="Adjust speed"
+            />
+            <span id="speed-value">1x</span>
+          </div>
+        </div>
+
+        <!-- Score Display (for karaoke mode) -->
+        <div id="score-display" class="score-display" style="display: none">
+          <div class="score-item">
+            <span class="material-icons">stars</span>
+            <span>Score: <strong id="score">0</strong></span>
+          </div>
+          <div class="score-item">
+            <span class="material-icons">emoji_events</span>
+            <span>Accuracy: <strong id="accuracy">0%</strong></span>
+          </div>
+        </div>
+
+        <!-- Lyrics Display -->
+        <div id="lyrics-container" class="lyrics-container">
+          <div id="lyrics" class="lyrics">
+            <!-- Lyrics will be dynamically inserted here -->
+          </div>
+        </div>
+
+        <!-- Input for Karaoke Mode -->
+        <div id="karaoke-input-area" class="karaoke-input" style="display: none">
+          <div class="input-prompt">
+            <label for="karaoke-input">Fill in the blank:</label>
+            <div class="input-group">
+              <input 
+                type="text" 
+                id="karaoke-input" 
+                placeholder="Type the missing word..."
+                aria-label="Type missing word"
+              />
+              <button id="submit-answer" class="btn btn-primary">
+                <span class="material-icons">check</span>
+                Submit
+              </button>
+            </div>
+          </div>
+          <div id="feedback" class="feedback"></div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+          <div id="progress" class="progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- Final Results -->
+      <section id="results-section" class="glass-card" style="display: none">
+        <h2>🎉 Performance Results</h2>
+        <div id="results-content" class="results-content">
+          <!-- Results will be shown here -->
+        </div>
+        <div class="results-actions">
+          <button id="play-again-btn" class="btn btn-primary">
+            <span class="material-icons">replay</span>
+            Sing Again
+          </button>
+          <button id="choose-another-btn" class="btn btn-secondary">
+            <span class="material-icons">queue_music</span>
+            Choose Another Carol
+          </button>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          May your <span class="highlight">carols</span> be merry and your
+          voices be bright.<br />
+          <strong>Happy Holidays 2025! 🎄</strong>
+        </p>
+      </footer>
+    </main>
+
+    <script src="karaoke.js"></script>
+  </body>
+</html>

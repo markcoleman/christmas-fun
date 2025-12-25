@@ -9,6 +9,7 @@ An AI-powered, software-engineer-themed telling of the night before Christmas, b
 - 🎁 **Easter Eggs**: Hidden surprises activated by environment variables
 - 🌐 **Modern GitHub Pages**: Glassmorphism UI with responsive design
 - 🗺️ **Santa Tracker**: Interactive real-time map tracking Santa's journey around the world on Christmas Eve
+- 🎤 **Christmas Carol Karaoke**: Sing along to your favorite Christmas carols with interactive lyrics and fill-in-the-blank gameplay
 - 🎅 **MCP Server**: Model Context Protocol server for spreading holiday cheer through AI assistants
 
 ## Getting Started
@@ -31,6 +32,9 @@ npm run build
 
 # Run the festive story
 npm start
+
+# Run Christmas Carol Karaoke
+npm run karaoke
 
 # Run tests
 npm test
@@ -67,6 +71,46 @@ The Santa Tracker visualizes Santa's journey with:
 - ✅ Visited locations
 - 📍 Upcoming stops
 - ➡️ Animated route line
+
+## Christmas Carol Karaoke 🎤
+
+Sing along to your favorite Christmas carols with an interactive karaoke experience available both in the CLI and on the web!
+
+### Features
+
+- 🎵 **Sing-Along Mode**: Display lyrics line by line with timed animations - perfect for singing along
+- 🎤 **Karaoke Mode**: Interactive fill-in-the-blank gameplay where you guess missing words
+- 📊 **Score Tracking**: Earn points for correct answers and track your accuracy
+- 🎶 **Multiple Carols**: Choose from popular favorites like "Jingle Bells", "Silent Night", "Deck the Halls", and more
+- 🎲 **Random Selection**: Feeling adventurous? Let the system pick a random carol for you
+- ⚡ **Speed Control**: Adjust playback speed to match your singing pace (web only)
+- 🎨 **Beautiful UI**: Glassmorphism design with real-time lyric highlighting on the web
+
+### How to Use
+
+**CLI Version:**
+```bash
+npm run karaoke
+```
+
+Select your preferred mode:
+1. **Sing-Along Mode** - Just enjoy reading the lyrics as they appear
+2. **Karaoke Mode** - Fill in the blanks and earn points for correct answers
+
+**Web Version:**
+1. Visit the [Christmas Fun GitHub Pages site](https://markcoleman.github.io/christmas-fun/)
+2. Click the "Karaoke 🎤" button
+3. Select a carol from the available options
+4. Toggle between Sing-Along and Karaoke modes
+5. Press "Start Singing" to begin
+6. In Karaoke mode, type the missing words when prompted
+
+The karaoke feature includes:
+- 🎵 Real-time lyric highlighting
+- 🎯 Interactive fill-in-the-blank challenges
+- 🏆 Performance scoring and accuracy tracking
+- 🎨 Smooth animations and festive styling
+- 📱 Responsive design for all devices
 
 ## MCP Server 🎅
 

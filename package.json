@@ -5,8 +5,9 @@
     "description": "An unusual, software-engineer-themed telling of the night before Christmas",
     "main": "index.js",
     "scripts": {
-        "build": "tsc && copyfiles story.*.json dist",
+        "build": "tsc && copyfiles story.*.json carols.json dist",
         "start": "npm run build && node dist/index.js",
+        "karaoke": "npm run build && node dist/karaoke.js",
         "test": "vitest --run --coverage",
         "mcp": "node dist/src/mcp-server.js",
         "test:mcp": "npm run build && node dist/src/test-mcp.js"
