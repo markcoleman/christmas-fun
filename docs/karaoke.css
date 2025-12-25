@@ -222,7 +222,7 @@
   opacity: 0.3;
 }
 
-.lyric-line.blank-word {
+.blank-word {
   background: rgba(255, 255, 0, 0.3);
   padding: 0.25rem 1rem;
   border-radius: 8px;
