@@ -3,31 +3,46 @@ import chalk from "chalk";
 
 /**
  * A festive ASCII Christmas tree
+ * Using escaped string for reliable rendering
  */
-export const christmasTree: string = `
-           ${chalk.yellow("|")}
-         ${chalk.greenBright("'.'.''")}
-        ${chalk.greenBright("-= o =-")}
-         ${chalk.greenBright(".'.'.")}
-           ${chalk.yellow("|")}
-           ${chalk.yellow(",")}
-          ${chalk.greenBright("/ \\")}
-        ${chalk.greenBright(".'. o'.")}
-       ${chalk.greenBright("/ 6 s ^.\\")}
-      ${chalk.greenBright("/.-.o *.-.\\")}
-      ${chalk.greenBright("`/. '.'9  \\`")}
-     ${chalk.greenBright(".'6. *  s o '.")}
-    ${chalk.greenBright("/.--.s .6 .--.\\")}
-    ${chalk.greenBright("`/ s '. .' * .\\`")}
-   ${chalk.greenBright(".' o 6 .` .^ 6 s'.")}
-  ${chalk.greenBright("/.---. * ^ o .----.\\")}
-  ${chalk.greenBright("`/s * \\`.^ s.' ^ * \\`")}
- ${chalk.greenBright(".' o , 6 \\`.' ^ o  6 '.")}
-${chalk.greenBright("/,-^--,  o ^ * s ,----,\\")}
-${chalk.greenBright("`'-._s.;-,_6_^,-;._o.-'")}
-     ${chalk.yellow("jgs |   |")}
-         ${chalk.yellow("`\"\"\"`")}
+const rawChristmasTree = `
+           |
+         '.'.'
+        -= o =-
+         .'.'.
+           |
+           ,
+          / \\
+        .'. o'.
+       / 6 s ^.\\
+      /.-.o *.-. \\
+      \`/. '.'9  \\\`
+     .'6. *  s o '.
+    /.--.s .6 .--.\\
+    \`/ s '. .' * .\\\`
+   .' o 6 .\` .^ 6 s'.
+  /.---. * ^ o .----.\\
+  \`/s * \\\`.^ s.' ^ * \\\`
+ .' o , 6 \\\`.' ^ o  6 '.
+/,-^--,  o ^ * s ,----,\\
+\`'-._s.;-,_6_^,-;._o.-'
+     jgs |   |
+         \`"""\`
 `;
+
+/**
+ * Apply colors to the Christmas tree
+ */
+export const christmasTree: string = rawChristmasTree
+  .split('\n')
+  .map((line, index) => {
+    // Color the top star/trunk yellow, rest of tree green
+    if (index === 0 || index === 1 || line.includes('jgs') || line.includes('"""')) {
+      return chalk.yellow(line);
+    }
+    return chalk.greenBright(line);
+  })
+  .join('\n');
 
 /**
  * A simple Santa Claus ASCII
