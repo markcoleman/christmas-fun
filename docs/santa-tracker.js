@@ -16,6 +16,9 @@ class SantaTracker {
     this.animationSpeed = 1;
     this.animationTimeout = null;
 
+    // Animation configuration
+    this.BASE_ANIMATION_DELAY_MS = 3000; // 3 seconds between stops
+
     // Initialize the tracker
     this.init();
   }
@@ -45,7 +48,7 @@ class SantaTracker {
   async loadJourneyData() {
     const response = await fetch('santa-journey.json');
     if (!response.ok) {
-      throw new Error(`Failed to load journey data: ${response.status}`);
+      throw new Error(`Failed to load journey data: ${response.status} ${response.statusText}`);
     }
     this.journeyData = await response.json();
   }
@@ -227,8 +230,7 @@ class SantaTracker {
     });
 
     // Move to next stop after delay (adjusted by speed)
-    const baseDelay = 3000; // 3 seconds base delay
-    const delay = baseDelay / this.animationSpeed;
+    const delay = this.BASE_ANIMATION_DELAY_MS / this.animationSpeed;
 
     this.animationTimeout = setTimeout(() => {
       this.currentStopIndex++;
