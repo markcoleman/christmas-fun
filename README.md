@@ -8,6 +8,7 @@ An AI-powered, software-engineer-themed telling of the night before Christmas, b
 - ✨ **Festive Console Experience**: ASCII art, timed animations, and colorful output
 - 🎁 **Easter Eggs**: Hidden surprises activated by environment variables
 - 🌐 **Modern GitHub Pages**: Glassmorphism UI with responsive design
+- 🗺️ **Santa Tracker**: Interactive real-time map tracking Santa's journey around the world on Christmas Eve
 - 🎅 **MCP Server**: Model Context Protocol server for spreading holiday cheer through AI assistants
 
 ## Getting Started
@@ -37,6 +38,35 @@ npm test
 # Run the MCP server
 npm run mcp
 ```
+
+## Santa Tracker 🗺️
+
+Track Santa's journey around the world in real-time on Christmas Eve! This interactive feature includes:
+
+### Features
+
+- 🌍 **Interactive Map**: Built with Leaflet.js showing Santa's complete route
+- 📍 **15 Global Stops**: From Tokyo to New York, including the North Pole
+- 🎁 **Real-time Animation**: Watch Santa travel from location to location
+- 📊 **Live Statistics**: Track total deliveries and current progress
+- 🎨 **Festive Details**: Fun facts and holiday traditions for each location
+- 🎮 **Interactive Controls**: Play, pause, reset, and adjust animation speed
+- 📱 **Responsive Design**: Works beautifully on desktop and mobile devices
+
+### How to Use
+
+1. Visit the [Christmas Fun GitHub Pages site](https://markcoleman.github.io/christmas-fun/)
+2. Click the "Track Santa 🎅" button
+3. Press "Start Journey" to begin the animation
+4. Click on any marker to see location details and fun facts
+5. Use speed controls to adjust the animation pace
+
+The Santa Tracker visualizes Santa's journey with:
+- 🏠 North Pole (start and end)
+- 🎅 Current location marker
+- ✅ Visited locations
+- 📍 Upcoming stops
+- ➡️ Animated route line
 
 ## MCP Server 🎅
 

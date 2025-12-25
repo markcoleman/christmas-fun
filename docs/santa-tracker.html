@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santa Tracker 2025 - Track Santa's Journey</title>
+    <meta
+      name="description"
+      content="Track Santa's journey around the world in real-time on Christmas Eve 2025!"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link href="main.css" rel="stylesheet" />
+    <link href="santa-tracker.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- SNOW LAYER -->
+    <div class="snowfall" aria-hidden="true">
+      <div class="snowflake" style="left: 10%; animation-duration: 5s"></div>
+      <div class="snowflake" style="left: 25%; animation-duration: 6s"></div>
+      <div class="snowflake" style="left: 45%; animation-duration: 4s"></div>
+      <div class="snowflake" style="left: 60%; animation-duration: 8s"></div>
+      <div class="snowflake" style="left: 75%; animation-duration: 5s"></div>
+      <div class="snowflake" style="left: 90%; animation-duration: 7s"></div>
+      <div class="snowflake" style="left: 15%; animation-duration: 5.5s"></div>
+      <div class="snowflake" style="left: 35%; animation-duration: 8s"></div>
+      <div class="snowflake" style="left: 55%; animation-duration: 4.5s"></div>
+      <div class="snowflake" style="left: 70%; animation-duration: 9s"></div>
+      <div class="snowflake" style="left: 10%; animation-duration: 6.5s"></div>
+      <div class="snowflake" style="left: 30%; animation-duration: 7.2s"></div>
+      <div class="snowflake" style="left: 50%; animation-duration: 6.9s"></div>
+      <div class="snowflake" style="left: 66%; animation-duration: 5.1s"></div>
+      <div class="snowflake" style="left: 78%; animation-duration: 4.2s"></div>
+      <div class="snowflake" style="left: 88%; animation-duration: 8.3s"></div>
+      <div class="snowflake" style="left: 5%; animation-duration: 5.7s"></div>
+      <div class="snowflake" style="left: 20%; animation-duration: 4.8s"></div>
+      <div class="snowflake" style="left: 95%; animation-duration: 6.3s"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="santa-header">
+      <div class="header-content">
+        <a href="index.html" class="back-link">
+          <span class="material-icons">arrow_back</span>
+          Back to Home
+        </a>
+        <h1>🎅 Santa Tracker 2025</h1>
+        <p>Follow Santa's journey around the world!</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="tracker-container">
+      <!-- Control Panel -->
+      <div class="control-panel glass-card">
+        <div class="controls">
+          <button id="play-btn" class="btn btn-primary" aria-label="Play animation">
+            <span class="material-icons">play_arrow</span>
+            Start Journey
+          </button>
+          <button id="pause-btn" class="btn btn-secondary" disabled aria-label="Pause animation">
+            <span class="material-icons">pause</span>
+            Pause
+          </button>
+          <button id="reset-btn" class="btn btn-secondary" aria-label="Reset animation">
+            <span class="material-icons">replay</span>
+            Reset
+          </button>
+          <div class="speed-control">
+            <label for="speed-slider">
+              <span class="material-icons">speed</span>
+              Speed: <span id="speed-value">1x</span>
+            </label>
+            <input
+              type="range"
+              id="speed-slider"
+              min="0.5"
+              max="3"
+              step="0.5"
+              value="1"
+              aria-label="Animation speed"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Map and Info Container -->
+      <div class="map-info-container">
+        <!-- Map -->
+        <div id="map" class="map-container" role="application" aria-label="Santa's journey map"></div>
+
+        <!-- Location Info Panel -->
+        <aside class="location-info glass-card">
+          <h2>
+            <span class="material-icons">location_on</span>
+            Current Location
+          </h2>
+          <div id="location-details">
+            <div class="loading-state">
+              <p>🎅 Click "Start Journey" to begin tracking Santa!</p>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-label">Total Stops:</span>
+              <span class="stat-value" id="total-stops">15</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Current Stop:</span>
+              <span class="stat-value" id="current-stop">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Deliveries:</span>
+              <span class="stat-value" id="total-deliveries">0</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Legend -->
+      <div class="legend glass-card">
+        <h3>Legend</h3>
+        <div class="legend-items">
+          <div class="legend-item">
+            <span class="legend-marker current">🎅</span>
+            <span>Current Location</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-marker visited">✅</span>
+            <span>Visited</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-marker upcoming">📍</span>
+            <span>Upcoming</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-line"></span>
+            <span>Santa's Route</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="santa-footer">
+      <p>
+        May your <span class="highlight">agents</span> be smart and your builds
+        be serene.<br />
+        <strong>Happy Holidays 2025! 🎄</strong>
+      </p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="santa-tracker.js"></script>
+  </body>
+</html>
