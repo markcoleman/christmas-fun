@@ -108,10 +108,12 @@ jobs:
       # 7. Build Docker image from Dockerfile, injecting release notes or commit message as a label
       - name: Build Docker Image
         id: build_docker
+        env:
+          RELEASE_NOTES_RAW: ${{ steps.get_release_notes.outputs.result }}
         run: |
           # We'll transform multiline release notes to a single line, if we actually fetched them
-          if [ "${{ steps.get_release_notes.outputs.result }}" != "" ]; then
-            RELEASE_NOTES=$(echo "${{ steps.get_release_notes.outputs.result }}" | tr '\n' ' ' | sed 's/"/\\"/g')
+          if [ -n "${RELEASE_NOTES_RAW:-}" ]; then
+            RELEASE_NOTES=$(echo "$RELEASE_NOTES_RAW" | tr '\n' ' ' | sed 's/"/\\"/g')
           else
             RELEASE_NOTES="(No release notes or run was manual.)"
           fi
