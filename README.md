@@ -10,6 +10,7 @@ An AI-powered, software-engineer-themed telling of the night before Christmas, b
 - 🌐 **Modern GitHub Pages**: Glassmorphism UI with responsive design
 - 🗺️ **Santa Tracker**: Interactive real-time map tracking Santa's journey around the world on Christmas Eve
 - 🎤 **Christmas Carol Karaoke**: Sing along to your favorite Christmas carols with interactive lyrics and fill-in-the-blank gameplay
+- 🎄 **Holiday Spirit Generator**: Get jokes, trivia, activity suggestions, and New Year countdown - available in CLI and web!
 - 🎅 **MCP Server**: Model Context Protocol server for spreading holiday cheer through AI assistants
 
 ## Getting Started
@@ -35,6 +36,13 @@ npm start
 
 # Run Christmas Carol Karaoke
 npm run karaoke
+
+# Holiday Spirit Generator Commands
+node dist/index.js joke      # Get a random Christmas joke
+node dist/index.js trivia    # Learn a Christmas trivia fact
+node dist/index.js activity  # Get a festive activity suggestion
+node dist/index.js countdown # See the countdown to New Year's
+node dist/index.js help      # Show all available commands
 
 # Run tests
 npm test
@@ -71,6 +79,55 @@ The Santa Tracker visualizes Santa's journey with:
 - ✅ Visited locations
 - 📍 Upcoming stops
 - ➡️ Animated route line
+
+## Holiday Spirit Generator 🎄
+
+Get into the festive mood with our Holiday Spirit Generator! This shared module powers both the CLI and web interface with fun Christmas content.
+
+### Features
+
+- 🎅 **Christmas Jokes**: Tech-themed holiday humor perfect for developers
+- 🎄 **Holiday Trivia**: Fascinating facts about Christmas traditions worldwide
+- ✨ **Activity Suggestions**: Festive activities with a tech twist
+- ⏰ **New Year Countdown**: Real-time countdown to the next year
+
+### How to Use
+
+**CLI Version:**
+```bash
+# Build the project first
+npm run build
+
+# Get a random Christmas joke
+node dist/index.js joke
+
+# Learn some Christmas trivia
+node dist/index.js trivia
+
+# Get a festive activity suggestion
+node dist/index.js activity
+
+# See the countdown to New Year's
+node dist/index.js countdown
+
+# Show all available commands
+node dist/index.js help
+```
+
+**Web Version:**
+1. Visit the [Christmas Fun GitHub Pages site](https://markcoleman.github.io/christmas-fun/)
+2. Scroll to the "Holiday Spirit Generator" section
+3. Click any of the interactive buttons:
+   - **Tell Me a Joke** - Get a developer-themed Christmas joke
+   - **Share Trivia** - Learn interesting Christmas facts
+   - **Suggest Activity** - Get a festive activity idea
+4. Watch the live New Year's countdown update in real-time!
+
+The Holiday Spirit Generator features:
+- 🔄 **Shared Codebase**: Same logic powers both CLI and web
+- 🎨 **Beautiful UI**: Glassmorphism cards with smooth animations
+- 📱 **Responsive Design**: Works perfectly on all devices
+- ⏱️ **Live Updates**: Countdown refreshes every second
 
 ## Christmas Carol Karaoke 🎤
 
