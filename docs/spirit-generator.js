@@ -1,6 +1,14 @@
 /**
  * Holiday Spirit Generator - Browser version for GitHub Pages
- * This is a standalone JavaScript file that can be used in the browser
+ * 
+ * NOTE: This file is intentionally separate from the TypeScript module
+ * to provide a zero-dependency, standalone JavaScript file that can be
+ * used directly in the browser without any build tools or bundlers.
+ * 
+ * While this creates some duplication, it ensures the GitHub Pages site
+ * works independently and loads quickly without requiring module bundlers
+ * or transpilation. For a production application, consider using a build
+ * tool to generate this from the TypeScript source.
  */
 
 // Christmas-themed jokes
