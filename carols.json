@@ -1,0 +1,86 @@
+[
+  {
+    "id": "jingle-bells",
+    "title": "Jingle Bells",
+    "difficulty": "easy",
+    "lyrics": [
+      { "line": "Dashing through the snow", "time": 2000, "blank": null },
+      { "line": "In a one-horse open sleigh", "time": 2000, "blank": null },
+      { "line": "O'er the fields we go", "time": 2000, "blank": null },
+      { "line": "Laughing all the way", "time": 2000, "blank": "way" },
+      { "line": "Bells on bobtails ring", "time": 2000, "blank": null },
+      { "line": "Making spirits bright", "time": 2000, "blank": "bright" },
+      { "line": "What fun it is to ride and sing", "time": 2000, "blank": null },
+      { "line": "A sleighing song tonight!", "time": 2000, "blank": "tonight" },
+      { "line": "", "time": 500, "blank": null },
+      { "line": "Jingle bells, jingle bells", "time": 2000, "blank": null },
+      { "line": "Jingle all the way", "time": 2000, "blank": null },
+      { "line": "Oh, what fun it is to ride", "time": 2000, "blank": "ride" },
+      { "line": "In a one-horse open sleigh, hey!", "time": 2500, "blank": null },
+      { "line": "Jingle bells, jingle bells", "time": 2000, "blank": null },
+      { "line": "Jingle all the way", "time": 2000, "blank": null },
+      { "line": "Oh, what fun it is to ride", "time": 2000, "blank": null },
+      { "line": "In a one-horse open sleigh!", "time": 2500, "blank": "sleigh" }
+    ]
+  },
+  {
+    "id": "silent-night",
+    "title": "Silent Night",
+    "difficulty": "medium",
+    "lyrics": [
+      { "line": "Silent night, holy night", "time": 3000, "blank": null },
+      { "line": "All is calm, all is bright", "time": 3000, "blank": "bright" },
+      { "line": "Round yon virgin, mother and child", "time": 3000, "blank": null },
+      { "line": "Holy infant so tender and mild", "time": 3000, "blank": "mild" },
+      { "line": "Sleep in heavenly peace", "time": 2500, "blank": null },
+      { "line": "Sleep in heavenly peace", "time": 3000, "blank": "peace" },
+      { "line": "", "time": 500, "blank": null },
+      { "line": "Silent night, holy night", "time": 3000, "blank": null },
+      { "line": "Shepherds quake at the sight", "time": 3000, "blank": "sight" },
+      { "line": "Glories stream from heaven afar", "time": 3000, "blank": null },
+      { "line": "Heavenly hosts sing Alleluia", "time": 3000, "blank": "Alleluia" },
+      { "line": "Christ the Savior is born", "time": 2500, "blank": null },
+      { "line": "Christ the Savior is born", "time": 3000, "blank": "born" }
+    ]
+  },
+  {
+    "id": "deck-the-halls",
+    "title": "Deck the Halls",
+    "difficulty": "easy",
+    "lyrics": [
+      { "line": "Deck the halls with boughs of holly", "time": 2000, "blank": null },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null },
+      { "line": "'Tis the season to be jolly", "time": 2000, "blank": "jolly" },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null },
+      { "line": "Don we now our gay apparel", "time": 2000, "blank": null },
+      { "line": "Fa-la-la, la-la-la, la-la-la", "time": 2000, "blank": null },
+      { "line": "Troll the ancient yuletide carol", "time": 2000, "blank": "carol" },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null },
+      { "line": "", "time": 500, "blank": null },
+      { "line": "See the blazing yule before us", "time": 2000, "blank": null },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null },
+      { "line": "Strike the harp and join the chorus", "time": 2000, "blank": "chorus" },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null },
+      { "line": "Follow me in merry measure", "time": 2000, "blank": null },
+      { "line": "Fa-la-la, la-la-la, la-la-la", "time": 2000, "blank": null },
+      { "line": "While I tell of yuletide treasure", "time": 2000, "blank": "treasure" },
+      { "line": "Fa-la-la-la-la, la-la-la-la", "time": 2000, "blank": null }
+    ]
+  },
+  {
+    "id": "we-wish-you",
+    "title": "We Wish You a Merry Christmas",
+    "difficulty": "easy",
+    "lyrics": [
+      { "line": "We wish you a Merry Christmas", "time": 2000, "blank": null },
+      { "line": "We wish you a Merry Christmas", "time": 2000, "blank": null },
+      { "line": "We wish you a Merry Christmas", "time": 2000, "blank": "Christmas" },
+      { "line": "And a Happy New Year!", "time": 2000, "blank": null },
+      { "line": "", "time": 500, "blank": null },
+      { "line": "Good tidings we bring", "time": 2000, "blank": null },
+      { "line": "To you and your kin", "time": 2000, "blank": "kin" },
+      { "line": "Good tidings for Christmas", "time": 2000, "blank": null },
+      { "line": "And a Happy New Year!", "time": 2000, "blank": "Year" }
+    ]
+  }
+]
