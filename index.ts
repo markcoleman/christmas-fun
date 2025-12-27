@@ -55,6 +55,12 @@ import {
   debugEasterEgg,
   codeCoverage,
 } from "./easterEggs.js";
+import {
+  generateJoke,
+  randomTrivia,
+  suggestActivity,
+  getCountdown,
+} from "./src/shared/spirit-generator.js";
 
 /**
  * If you want typed access to the JSON,
@@ -122,7 +128,46 @@ export async function main(): Promise<void> {
  * or you can replicate the logic with fileURLToPath if desired.
  */
 if (import.meta.url === `file://${process.argv[1]}`) {
-  main().catch((err) => {
-    console.error(chalk.red("An error occurred:", err));
-  });
+  const command = process.argv[2]?.toLowerCase();
+
+  // Handle spirit generator commands
+  if (command === "joke") {
+    console.log(chalk.cyanBright("\n🎅 Christmas Joke 🎄"));
+    console.log(chalk.yellow(generateJoke()));
+    console.log();
+  } else if (command === "trivia") {
+    console.log(chalk.cyanBright("\n🎄 Christmas Trivia 🎅"));
+    console.log(chalk.green(randomTrivia()));
+    console.log();
+  } else if (command === "activity") {
+    console.log(chalk.cyanBright("\n✨ Festive Activity Suggestion ✨"));
+    console.log(chalk.magenta(suggestActivity()));
+    console.log();
+  } else if (command === "countdown") {
+    const countdown = getCountdown();
+    console.log(chalk.cyanBright("\n⏰ New Year's Countdown ⏰"));
+    console.log(chalk.greenBright(`Time remaining: ${countdown.formatted}`));
+    console.log(
+      chalk.yellow(
+        `📅 Days: ${countdown.days} | ⏱️  Hours: ${countdown.hours} | ⏲️  Minutes: ${countdown.minutes} | ⏳ Seconds: ${countdown.seconds}`,
+      ),
+    );
+    console.log();
+  } else if (command === "help") {
+    console.log(chalk.cyanBright("\n🎄 Christmas Fun - Holiday Spirit Generator 🎄\n"));
+    console.log(chalk.white("Available commands:"));
+    console.log(chalk.green("  joke      ") + "- Get a random Christmas joke");
+    console.log(chalk.green("  trivia    ") + "- Learn a Christmas trivia fact");
+    console.log(chalk.green("  activity  ") + "- Get a festive activity suggestion");
+    console.log(chalk.green("  countdown ") + "- See the countdown to New Year's");
+    console.log(chalk.green("  help      ") + "- Show this help message");
+    console.log(
+      chalk.yellow("\nRun without arguments to see the full Christmas story!\n"),
+    );
+  } else {
+    // Default: run the full story
+    main().catch((err) => {
+      console.error(chalk.red("An error occurred:", err));
+    });
+  }
 }
