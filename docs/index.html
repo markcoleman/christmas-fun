@@ -150,6 +150,54 @@
         </p>
       </section>
 
+      <!-- Holiday Spirit Generator Section -->
+      <section class="spirit-generator glass-card">
+        <h2>🎄 Holiday Spirit Generator 🎅</h2>
+        <p>
+          Get into the festive mood with our interactive Holiday Spirit Generator!
+        </p>
+        
+        <div class="spirit-buttons">
+          <button class="btn btn-primary" onclick="showJoke()">
+            <span class="material-icons">sentiment_very_satisfied</span>
+            Tell Me a Joke
+          </button>
+          <button class="btn btn-primary" onclick="showTrivia()">
+            <span class="material-icons">lightbulb</span>
+            Share Trivia
+          </button>
+          <button class="btn btn-primary" onclick="showActivity()">
+            <span class="material-icons">celebration</span>
+            Suggest Activity
+          </button>
+        </div>
+
+        <div id="spirit-output" class="spirit-output"></div>
+
+        <!-- Countdown Section -->
+        <div class="countdown-section">
+          <h3>⏰ New Year's Countdown</h3>
+          <div id="countdown-display" class="countdown-display">
+            <div class="countdown-item">
+              <span id="days" class="countdown-number">-</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+              <span id="hours" class="countdown-number">-</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+              <span id="minutes" class="countdown-number">-</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+              <span id="seconds" class="countdown-number">-</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="about glass-card">
         <h2>About This Project</h2>
         <p>
@@ -198,6 +246,9 @@
     <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Holiday Spirit Generator -->
+    <script src="spirit-generator.js"></script>
 
     <script src="main.js"></script>
   </body>

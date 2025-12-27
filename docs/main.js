@@ -110,3 +110,55 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
   }
 });
+
+// Holiday Spirit Generator Functions
+function showJoke() {
+  const joke = window.HolidaySpirit.generateJoke();
+  const output = document.getElementById("spirit-output");
+  output.innerHTML = `
+    <div class="spirit-card joke-card">
+      <h4>🎅 Christmas Joke 🎄</h4>
+      <p>${joke}</p>
+    </div>
+  `;
+  output.style.display = "block";
+}
+
+function showTrivia() {
+  const trivia = window.HolidaySpirit.randomTrivia();
+  const output = document.getElementById("spirit-output");
+  output.innerHTML = `
+    <div class="spirit-card trivia-card">
+      <h4>🎄 Christmas Trivia 🎅</h4>
+      <p>${trivia}</p>
+    </div>
+  `;
+  output.style.display = "block";
+}
+
+function showActivity() {
+  const activity = window.HolidaySpirit.suggestActivity();
+  const output = document.getElementById("spirit-output");
+  output.innerHTML = `
+    <div class="spirit-card activity-card">
+      <h4>✨ Festive Activity Suggestion ✨</h4>
+      <p>${activity}</p>
+    </div>
+  `;
+  output.style.display = "block";
+}
+
+// Update countdown every second
+function updateCountdown() {
+  const countdown = window.HolidaySpirit.getCountdown();
+  document.getElementById("days").textContent = countdown.days;
+  document.getElementById("hours").textContent = countdown.hours;
+  document.getElementById("minutes").textContent = countdown.minutes;
+  document.getElementById("seconds").textContent = countdown.seconds;
+}
+
+// Start countdown timer
+if (window.HolidaySpirit) {
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
