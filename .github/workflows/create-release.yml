@@ -45,7 +45,8 @@ jobs:
         id: validate_tag
         run: |
           # We'll fetch all remote tags so we can check if the version exists
-          git fetch --tags
+          # Use --force to overwrite any existing local tags that may conflict
+          git fetch --tags --force
 
           # Grab the resolved_version from previous step
           VERSION="${{ steps.determine_version.outputs.resolved_version }}"
