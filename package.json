@@ -21,7 +21,7 @@
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-        "@modelcontextprotocol/sdk": "^1.25.1",
+        "@modelcontextprotocol/sdk": "^1.25.2",
         "chalk": "^5.6.2"
     },
     "devDependencies": {
